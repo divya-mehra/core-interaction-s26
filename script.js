@@ -12,21 +12,25 @@ const students = {
   10: { name: "Felicia" },
   11: { name: "Ruoxi" },
   12: { name: "Annie" },
-  13: { name: "Binbing" }
+  13: { name: "Binbing" },
+  14: { name: "Divya" },
+  15: { name: ":)" }
+
+
 };
 
 let container = document.querySelector(".right-side");
 
 
 for (let key in students) {
-    console.log(students[key].name)
-    let clock = document.createElement("div");
-        clock.innerHTML = `<div class="clock">
+  console.log(students[key].name)
+  let clock = document.createElement("div");
+  clock.innerHTML = `<div class="clock">
                 <div class="hand hour"></div>
                 <div class="hand minute"></div>
                 <div class="name">${students[key].name}</div>
                 </div>`
-    container.append(clock);
+  container.append(clock);
 
 
 
